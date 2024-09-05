@@ -157,7 +157,7 @@ nav {
     height: 100%;
     position: fixed;
     z-index: 9999;
-    background:url('img/loading.gif') no-repeat center center;
+    background: url('img/Loading.gif') no-repeat center center;
 }
   
 .gallery-images {
