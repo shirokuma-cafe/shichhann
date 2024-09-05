@@ -32,7 +32,7 @@ html {
 
 body {
     margin: 0;
-    min-width: 430px;
+    min-width: 320px;
     min-height: 100vh;
     background: var(--clr-main);
     font-family: var(--ff-primary), sans-serif;
@@ -46,7 +46,7 @@ header {
     top: 0;
     position: fixed;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background: var(--clr-header);
     z-index: 10;
@@ -62,7 +62,7 @@ header {
 }
 
 .logo h1 {
-    margin: 15px 0px 0px 120px;
+    margin: 15px 0px 0px 100px;
     color: var(--clr-white);
     font-size: var(--fs-header)
 }
@@ -73,6 +73,7 @@ nav {
 }
 
 .nav-list {
+    padding: 0;
     list-style: none;
     float: right;
     display: flex;
@@ -82,7 +83,7 @@ nav {
 }
 
 .nav-item {
-    margin-right: 30px;
+    margin-right: 20px;
     font-size: var(--fs-header);
 }
 
@@ -127,7 +128,7 @@ nav {
 .about {
     text-align: center;
     overflow-y: hidden;
-    margin: 120px 75px 0px 75px;
+    margin-top: 120px;
 }
 
 .about img {
@@ -137,6 +138,7 @@ nav {
 
 .intro {
     font-size: var(--fs-normal);
+    margin: 10px 50px;
 }
 
 
