@@ -62,7 +62,7 @@ header {
 }
 
 .logo h1 {
-    margin: 15px 0px 0px 100px;
+    margin: 15px 0px 0px 110px;
     color: var(--clr-white);
     font-size: var(--fs-header)
 }
@@ -87,9 +87,9 @@ nav {
     font-size: var(--fs-header);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 750px) {
     .nav-item, .logo h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -157,7 +157,7 @@ nav {
     height: 100%;
     position: fixed;
     z-index: 9999;
-    background:url('loading.gif') no-repeat center center;
+    background:url('img/loading.gif') no-repeat center center;
 }
   
 .gallery-images {
