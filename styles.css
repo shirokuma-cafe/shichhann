@@ -141,7 +141,6 @@ nav {
     margin: 10px 50px;
 }
 
-
 /* Gallery */
 
 .gallery {
@@ -163,7 +162,7 @@ nav {
 .gallery-images {
     padding: 0;
     max-width: 95%;
-    columns: 3 425px;
+    columns: 3 445px;
 }
 
 .gallery-images img {

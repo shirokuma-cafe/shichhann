@@ -13,23 +13,24 @@ function createGallery(images) {
     const imgElement = document.createElement('img');
     imgElement.src = `img/${images[i]}`;
     imgElement.loading = 'lazy';
-    imgElement.width = 425;
+    imgElement.width = 445;
     gallery.appendChild(imgElement);
   }
 }
 
-preloadImages(images);
-
 document.addEventListener('readystatechange', (event) => {
-  if (event.target.readyState === 'interactive') {
+  if (event.target.readyState === 'loading'){ 
+    preloadImages(images);
+  }
+  else if (event.target.readyState === 'interactive') {
     gallery.style.visibility = 'hidden';
   } 
   else if (event.target.readyState === 'complete') {
-    setTimeout(function(){
+    createGallery(images);
+    setTimeout(function() {
       document.querySelector('.loading').style.visibility= 'hidden';
       gallery.style.visibility= 'visible';
     }, 1000);
-    createGallery(images);
     const galleryImages = document.querySelectorAll('.gallery img');
     const imageFull = document.querySelector('.imageFull');
     galleryImages.forEach((image) => {
