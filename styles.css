@@ -160,26 +160,37 @@ nav {
 }
   
 .gallery-images {
-    padding: 0;
-    max-width: 95%;
-    columns: 3 445px;
+    columns: 3;
+    gap: 2rem;
 }
 
 .gallery-images img {
+    display: block;
     object-fit: cover;
     height: 90%; 
     margin-bottom: 20px;
 }
 
-@media (max-width: 1415px) {
+@media (max-width: 1439px) {
     .gallery-images {
-        gap: 15px;
+        columns: 2;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .gallery-images {
+        columns: 1;
+        gap: 1rem;
     }
     .gallery-images img {
-        object-fit: cover;
-        height: 70%; 
-        width: 100%;
-        margin-bottom: 20px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-images img {
+        width: 300px;
     }
 }
 
